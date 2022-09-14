@@ -1,3 +1,3 @@
-# Linux Scripts
+# Scripts
 
-My linux scripts (mostly bash) for personal use
+My scripts (mostly bash) for personal use

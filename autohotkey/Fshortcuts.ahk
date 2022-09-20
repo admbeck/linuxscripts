@@ -1,8 +1,22 @@
 #notrayicon
-; win+letter to call programm 
-#w::Run, "C:\Program Files\Mozilla Firefox\firefox.exe"
+; win+letter to call programm
+Browser()
+{
+    Try
+    {
+        Run, firefox
+        return
+    }
+    Try
+    {
+        Run, msedge
+        return
+    }
+    return
+}
+#w::Browser()
 ; wsl stuff
-#Enter::Run, wt
+#Enter::Run, wt -p openSUSE-Tumbleweed
 #n::Run, wt -p vimwiki
 +#n::Run, wt -p newsboat
 return
